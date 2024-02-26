@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <p>Regular Expression</p>
+    <script>
+        let k = "innovatfdgdgdvE";
+        let regex = /^[i][a-z]+e$/i;
+        let check = regex.test(k);
+        if(check== true)
+        {
+            alert("Yes pattern Matched ::");
+        }
+        else{
+            alert("sorry Pattern Doesn't Matched:");
+        }
+        let k1 = "innovate 123sfg igvh 1wfdsf 2dfgd";
+        let regex1 = /^[igvh]$/g
+        let check2 = k1.search(regex)
+        console.log(check2);
+    </script>
+</body>
+</html>

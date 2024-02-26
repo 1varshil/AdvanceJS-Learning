@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InHeritance in js</title>
+</head>
+<body>
+    <p>It's all about the inheritance in javascript </p>
+
+    <script>
+        class animal{
+            constructor(name)
+            {
+                this.name = name;
+            }
+
+            speak(){
+                console.log(`so That animal is basically ${this.name}`);
+            }
+        }
+
+        // let dog = new animal('Tommy');
+        // console.log(dog.speak());
+
+        class Dog extends animal{
+            constructor(name,like)
+            {
+                super(name);
+                this.like = like;
+            }
+            speak(){
+                console.log(`basically ${this.name} likes the ${this.like}`)
+            }
+        }
+
+        const dog = new Dog("Tommy","mica");
+        dog.speak();
+    </script>
+</body>
+</html>

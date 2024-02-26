@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure With hoisting</title>
+</head>
+<body>
+    <p>hello </p>
+    <script>
+        function outer(){
+            var name="innovate";
+            var age= 23;
+            function inner(){
+                name= "Ayush";
+                age = 25;
+                return age;
+            }
+            inner();
+            age = 30;
+            name = "ketan";
+            // return inner();
+            return age;
+        }
+
+        let name = outer();
+        console.log(name)
+        // console.log("name is :",name);
+
+        //Multiply with rest parameters
+        // function multiply(mlt, ...theArgs) 
+        //     {
+        //     return theArgs.map((x) => mlt * x);
+        //     }
+
+        // const arr = multiply(2, 1, 2, 3);
+        // console.log(arr); // [2, 4, 6]
+        
+        // //implementing map
+
+        // const a = ['vsdf','sadfcszcs','sdfcszc','sdfcsz'];
+        // const a2 = a.map((val)=>{
+        //     return val.length;
+        // })
+        // console.log('a2 var length are ',a2);
+
+    </script>
+</body>
+</html>

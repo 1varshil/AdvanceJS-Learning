@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <p>It contains information regardring the objects in js </p>
+    <script>
+            const obj1 = {
+                name:"varshil",
+                age:34,
+            }
+            const person ={
+                uid:3,
+                clg:'LJ',
+                sem:'even',
+            }
+            // obj2 = Object.create(obj1,{
+            //     company:{value:'ABC'},
+            //     location:{value:'Ahmedabad'}
+            // });
+            // obj2.name = 'Ketan';
+            // console.log(obj2);
+
+            // const inn =  Object.assign({},obj1,person);
+            // console.log('ddd',inn)
+
+            // Object.defineProperties(person,{
+            //     uid:{
+            //         value:9,
+            //     },
+            // })
+            // console.log(person.uid);
+
+            // for(const [key,value] of Object.entries(person))
+            // {
+            //      console.log(`${key} : ${value}`)
+            // };
+            console.log(Object.keys(person))
+            console.log(Object.values(person))
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise</title>
+</head>
+<body>
+    <p>Hello</p>
+
+    <script>
+        console.log("oneline \n second line:");
+        const quote = "He read \"The Cremation of Sam McGee\" by R.W. Service.";
+        console.log('Quote..',quote);
+
+
+        console.log("var is block Scoped ok .");
+        let x = 20;
+        {
+            let x=10;
+            console.log("so inner function's X value will be",x)
+        }
+        console.log(`So the Value of x is ${x}`);
+
+        //truthy and falsy values 
+        if(9)
+        {
+            console.log("Hy Hello How Are you ");
+        }
+        else{
+            console.log("not better ok ..");
+        }
+
+        //Exception Handling in Javascript 
+        // let success = false;
+        // if(success== true)
+        // {
+        //     try{
+        //     console.log("Yes ")
+        //     }
+        //     catch(e)
+        //     {
+        //         alert(e.msg)
+        //     }
+        //     finally{
+        //         console.log("It's Ok That's happen");
+        //     }
+        // }
+        // else
+        // {
+        //     throw new Error;
+        // }
+
+
+                let i = 0;
+                let n = 0;
+                while (i < 5) {
+                 i++;
+                if (i === 3) {
+                  continue;
+                }
+                 n += i;
+                 console.log('val is',  n);
+                }
+// Logs:
+// 1 3 7 12
+
+// //factorial function
+// function factorial(n)
+// {
+//     if(n==0 || n==1)
+//     {
+//         return 1;
+//     }
+//     else{
+//         return n*factorial(n-1);
+//     }
+// }
+
+// // console.log("So the factorial of 6 is : ",factorial(6));
+
+// function hoisting
+console.log(square(5)); // 25
+
+function square(n) {
+  return n * n;
+}
+
+    </script>
+</body>
+</html>

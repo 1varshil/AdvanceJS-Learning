@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Child Frame</title>
+    <h2>Hello i am Child page</h2>
+    <script>
+    //   window.addEventListener("beforeunload", (event) => {
+    //     console.log("I am the 2nd one.");
+    //   });
+      window.addEventListener("unload", (event) => {
+        console.log("I am The Child Page is Gone…");
+      });
+    </script>
+  </head>
+  <body>
+    ☻
+  </body>
+</html>

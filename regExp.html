@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exec Expression in javascript</title>
+</head>
+<body>
+    <script>
+        var pattern = /hello (\w+)/;
+        var str = "hello world";
+
+        var result = pattern.exec(str);
+
+        if(result !== null)
+        {
+            console.log('Match Found : ' +result[0]);
+
+            console.log('captured Group :' +result[1]);
+        }
+        else{
+            console.log('no match found');
+        }
+    </script>
+</body>
+</html>

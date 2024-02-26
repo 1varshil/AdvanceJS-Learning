@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Prototype </title>
+</head>
+
+<body>
+    <p>Hello</p>
+    <script>
+        // function Animal(name, energy) {
+        //     let animal = {}
+        //     animal.name = name
+        //     animal.energy = energy
+        // }
+
+        // // console.log(Animal.prototype)
+
+        // // Animal.prototype.fly = function(){
+        // //     console.log("hello");
+        // // }
+
+        // console.log(Animal.prototype);
+
+        // function Shape(x, y) {
+        //     this.x = x;
+        //     this.y = y;
+        // }
+
+        // // Superclass method
+        // Shape.prototype.move = function (x, y) {
+        //     this.x += x;
+        //     this.y += y;
+        // }
+
+        // Shape.prototype.color = function (x, y, z) {
+        //     this.x += x;
+        //     this.y += y;
+        //     this.z += z;
+
+        // }
+
+        // console.log(Shape.prototype)
+
+        function Box(value) {
+            this.value = value;
+        }
+
+        // Properties all boxes created from the Box() constructor
+        // will have
+        Box.prototype.getValue = function () {
+            return this.value;
+        };
+
+        console.log(Box.prototype)
+
+        // const boxes = [new Box(1), new Box(2), new Box(3)]; 
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poly</title>
+</head>
+
+<body>
+    <p>Hello</p>
+    <script>
+        class A {
+            display() {
+                document.writeln("A is invoked<br>");
+            }
+        }
+        class B extends A {
+            display() {
+                document.writeln("B is invoked");
+            }
+        }
+
+        var a = new B();
+        a.display();
+    </script>
+</body>
+
+</html>

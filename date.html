@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <p>Hello</p>
+    <script>
+        const today = new Date();
+        console.log(today.getFullYear())
+        const xmas24 = new Date("1995,11,22");
+        console.log(xmas24.getDay());
+        console.log(xmas24.getMonth());
+        console.log(xmas24.getFullYear());
+        let a = xmas24.setFullYear(today.getFullYear());
+        console.log('so value after update is :',xmas24)
+
+        //clock making
+
+        const now = new Date();
+        let hr = now.getHours();
+        let min = now.getMinutes();
+        let sec = now.getSeconds();
+        console.log(`so Current Time is : ${hr} ${min} ${sec}`)
+
+        // const fstring = 'umesh2';
+        // console.log(fstring);
+        // console.log(parseInt(fstring));
+        var f = 3;
+        var b = '2'
+        var c = f + parseInt(b);
+        console.log(c);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+<style>  
+#output_text {  
+display: none;  
+color: red  
+}  
+</style>  
+<body>  
+<h2> Detect Caps Lock Key </h2>  
+<p> Press the "Caps Lock" key after starting to type in the input field function.</p>  
+<input id = "writeValue" placeholder = "Write Here...">  
+<p id = "output_text"> Caps lock is ON. </p>  
+<script>  
+var input_val = document.getElementById("writeValue");  
+var output_text = document.getElementById("output_text");  
+input_val.addEventListener("keyup", function(event) {  
+if (event.getModifierState("CapsLock")) {  
+    output_text.style.display = "block";  
+  } else {  
+    output_text.style.display = "none"  
+  }  
+});  
+</script>  
+</body>  
+</html>  

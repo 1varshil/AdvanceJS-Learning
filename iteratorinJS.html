@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterator </title>
+</head>
+
+<body>
+    <p>Hello it is the basically all about information Regarding the Iterator in javascript </p>
+    <script>
+        // const array = ['a', 'b', 'c']; 
+
+        // const it = array[Symbol.iterator](); 
+
+        // console.log(JSON.stringify(it.next())); 
+        // //{ value: "a", done: false } 
+
+        // console.log(JSON.stringify(it.next())); 
+        // //{ value: "b", done: false } 
+
+        // console.log(JSON.stringify(it.next())); 
+        // //{ value: "c", done: false } 
+
+        // console.log(JSON.stringify(it.next())); 
+        // /* Actual it.next() will be { value: undefined, 
+        // done: true } but here you will get 
+        // {done: true} output because of JSON.stringify 
+        // as it omits undefined values*/
+
+        // generator function
+        function* generatorFunc() {
+
+            // console.log("1. code before the first yield");
+            yield 100;
+
+            // console.log("2. code before the second yield");
+            yield 'ganesh';
+            yield 'innovate'
+        }
+
+        // returns generator object
+        const generator = generatorFunc();
+
+        console.log(generator.next());
+        console.log (generator.next());
+        console.log (generator.next())
+        console.log (generator.next())
+
+    </script>
+
+    </script>
+</body>
+
+</html>

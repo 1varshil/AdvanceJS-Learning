@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set in JS
+    </title>
+</head>
+<body>
+    <p>Set in Javascript</p>
+    <script>
+        let myarr = [1,2,3,4,5,5,6,7,7];
+        let obj = new Set(myarr);
+        obj.add(55);
+        obj1 = {
+            name:"varshil",
+        }
+        obj.add(obj1);
+        console.log(obj);
+        obj.delete(5);
+        console.log(obj);
+        console.log(obj.has(7));
+
+        console.log("Hellooo");
+        for(ele of obj)
+        {
+            console.log(ele);
+        }
+
+        let myMap = new Map([["a1","Ajay"],["a2","Vijay"]]);
+        myMap.set("a3","bHim")
+        console.log(myMap);
+        // myMap.delete("a3")
+        // console.log(myMap.get('a2'));
+        for(let [key,value] of myMap)
+        {
+            console.log(`So keys ${key} values ${value}`)
+        }
+        let ws = new WeakSet();
+        console.log(ws);
+
+
+        let wm = new WeakMap();
+        console.log(wm);
+
+    </script>
+</body>
+</html>
